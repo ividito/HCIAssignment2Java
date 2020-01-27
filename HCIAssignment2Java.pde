@@ -43,6 +43,16 @@ void mouseReleased(){
   redraw();
 }
 
+void keyPressed(){
+  if (key == BACKSPACE){
+    actionStack.remove(pointer-1);
+  }
+  if (key == 'e'){
+      drawMode = new Circle(1, 1, 1, 1, 1);
+  }
+  // TODO add more keys
+}
+
 
 
 
